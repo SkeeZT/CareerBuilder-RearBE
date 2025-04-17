@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/run-workflow",
+      "dest": "/api/run-workflow.js"
+    },
+    {
+      "src": "/api/workflow-result",
+      "dest": "/api/workflow-result.js"
+    }
+  ]
+}
